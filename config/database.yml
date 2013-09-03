@@ -10,3 +10,13 @@ development:
   pool: 5
   username: postgres
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: ec2-54-221-236-207.compute-1.amazonaws.com
+  database: d7cg1hhgjoq49v
+  pool: 5
+  username: sdkyosadmcnrta
+  password: L1HbcEYLatIKalo6Ym01meqJYm
+  port: 5432

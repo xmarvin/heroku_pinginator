@@ -11,7 +11,7 @@ class PingWorker
   private
 
   def send_request
-    Net::HTTP.get(URL)
+    Net::HTTP.get(URI(URL))
   end
 
   def reschedule
