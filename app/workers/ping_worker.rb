@@ -1,7 +1,7 @@
 class PingWorker
   require 'net/http'
   TIMEOUT = 5.minutes
-  URL = 'http://shortnotes.herokuapp.com/'
+  URLS = ['http://skills.pp.ua/']
 
   def perform
     send_request
@@ -11,7 +11,9 @@ class PingWorker
   private
 
   def send_request
-    Net::HTTP.get(URI(URL))
+    URLS.each do |url|
+      Net::HTTP.get(URI(url)) rescue nil
+    end
   end
 
   def reschedule
