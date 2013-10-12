@@ -6,10 +6,32 @@
 
 # Ignore bundler config
 /.bundle
+/.pass
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
 /tmp
+
+# Ignore specific conf
+/config/database.yml
+/config/environments/beta0.rb
+
+# Ignore dev stuff
+.idea
+/public/system/*
+
+nbproject/*
+.DS_Store
+
+coverage/
+*.swp
+dump.rdb
+log/*
+
+# Ignore sublime files
+*.sublime-project
+*.sublime-workspace
+public/assets
+public/uploads/*
