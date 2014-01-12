@@ -1,7 +1,7 @@
 class PingWorker
   require 'net/http'
   TIMEOUT = 5.minutes
-  URLS = ['http://skills.pp.ua/']
+  URLS = ['http://skills.pp.ua/', 'http://debts.pp.ua/']
 
   def perform
     send_request
